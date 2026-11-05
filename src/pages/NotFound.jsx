@@ -1,0 +1,5 @@
+import { Link } from 'react-router-dom'
+import { ArrowLeft, MessageSquare } from 'lucide-react'
+import SEO from '../components/SEO'
+
+export default function NotFound(){ return <><SEO title="Page Not Found | Youpeak Tech" description="The requested page could not be found."/><section className="section-wash grid min-h-[65vh] place-items-center overflow-hidden px-5 py-20 text-center"><div data-aos="zoom-in"><p className="gradient-text-bright text-7xl font-black tracking-[-.06em] sm:text-8xl">404</p><h1 className="gradient-text mt-4 text-4xl font-black tracking-[-.04em] sm:text-5xl">Page Not Found</h1><p className="mx-auto mt-5 max-w-lg text-lg leading-8 text-muted">The page you&apos;re looking for doesn&apos;t exist or may have been moved.</p><div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><Link to="/" className="btn-primary"><ArrowLeft size={17}/> Go Home</Link><Link to="/contact" className="btn-secondary">Contact Us <MessageSquare size={17}/></Link></div></div></section></> }

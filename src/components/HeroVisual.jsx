@@ -1,0 +1,14 @@
+import { BarChart3, CheckCircle2, Globe2, Smartphone, Zap } from 'lucide-react'
+
+export default function HeroVisual() {
+  return <div className="relative mx-auto w-full max-w-xl py-6 lg:py-0" aria-label="Illustration of connected digital products" role="img">
+    <div className="absolute inset-[5%] rounded-full bg-gradient-to-br from-cyan-100 via-violet-100 to-accent-50 blur-2xl"/>
+    <div className="relative ml-auto w-[92%] rounded-2xl border border-white/80 bg-white p-3 shadow-[0_32px_80px_-25px_rgba(69,54,150,.34)] sm:p-4">
+      <div className="flex items-center gap-1.5 border-b border-slate-100 pb-3"><i className="h-2.5 w-2.5 rounded-full bg-red-300"/><i className="h-2.5 w-2.5 rounded-full bg-amber-300"/><i className="h-2.5 w-2.5 rounded-full bg-green-300"/><span className="ml-3 h-5 flex-1 rounded-md bg-slate-50"/></div>
+      <div className="grid grid-cols-[.4fr_1fr] gap-3 pt-3 sm:gap-4"><div className="rounded-xl bg-gradient-to-b from-brand-50 to-violet-50 p-3"><span className="mb-6 block h-7 w-7 rounded-lg bg-gradient-to-br from-brand-600 to-violet-600"/>{[75,55,65,45].map((n,i)=><span key={i} style={{width:`${n}%`}} className="mb-3 block h-2 rounded-full bg-slate-200"/>)}</div><div><div className="rounded-xl bg-gradient-to-r from-brand-700 via-violet-600 to-cyan-500 p-4 text-white sm:p-5"><div className="flex items-center justify-between"><div><p className="text-[10px] uppercase tracking-widest text-blue-100">Business workspace</p><p className="mt-2 text-base font-extrabold sm:text-lg">Everything in one place</p></div><Zap className="text-amber-200" size={24}/></div></div><div className="mt-3 grid grid-cols-2 gap-3"><Mini icon={BarChart3} label="Insights"/><Mini icon={Globe2} label="Connected"/></div><div className="mt-3 flex items-end gap-1 rounded-xl border border-slate-100 p-3">{[42,64,48,82,66,92,76].map((n,i)=><i key={i} style={{height:`${n/2}px`}} className={`flex-1 rounded-t ${i===6?'bg-coral-500':i>4?'bg-accent-500':'bg-brand-100'}`}/>)}</div></div></div>
+    </div>
+    <div className="absolute -bottom-2 left-0 flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-xl sm:left-2 sm:p-4"><span className="grid h-10 w-10 place-items-center rounded-xl bg-accent-50 text-accent-600"><CheckCircle2 size={21}/></span><div><p className="text-xs font-bold text-ink sm:text-sm">Built for every screen</p><p className="text-[10px] text-muted sm:text-xs">Simple. Reliable. Responsive.</p></div></div>
+    <div className="absolute -right-1 top-4 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-violet-600 to-cyan-500 text-white shadow-lg sm:-right-4 sm:h-14 sm:w-14"><Smartphone size={23}/></div>
+  </div>
+}
+function Mini({icon:Icon,label}) { return <div className="rounded-xl border border-slate-100 p-3"><Icon size={17} className="text-brand-600"/><p className="mt-2 text-[10px] font-semibold text-slate-600 sm:text-xs">{label}</p></div> }
