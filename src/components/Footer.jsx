@@ -83,7 +83,7 @@ export default function Footer() {
 
     <div className="border-t border-white/10">
       <div className="container-site flex flex-col gap-3 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} {companyDetails.legalName}. All rights reserved.</p>
+        <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> {companyDetails.legalName}. All rights reserved.</p>
         <div className="flex gap-5">
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms & Conditions</Link>
@@ -93,4 +93,4 @@ export default function Footer() {
   </footer>
 }
 
-function FooterGroup({ title, children }) { return <div><h2 className="mb-4 text-sm font-bold">{title}</h2><div className="flex flex-col gap-3 text-sm text-slate-300 [&>*]:transition [&>a:hover]:text-white">{children}</div></div> }
+function FooterGroup({ title, children }) { return <div><p className="mb-4 text-sm font-bold">{title}</p><div className="flex flex-col gap-3 text-sm text-slate-300 [&>*]:transition [&>a:hover]:text-white">{children}</div></div> }

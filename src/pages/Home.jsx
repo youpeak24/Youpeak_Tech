@@ -9,7 +9,7 @@ import { ProjectCard } from './Projects'
 export default function Home() {
   const tones = ['blue','violet','green','coral','amber','cyan']
   return <>
-    <SEO title="YOUPEAK TECHNOLOGIES PRIVATE LIMITED | Web, App & Software Solutions" description="YOUPEAK TECHNOLOGIES PRIVATE LIMITED creates modern websites, applications, software and digital solutions designed to help businesses work smarter and grow with confidence."/>
+    <SEO path="/"/>
     <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-violet-50/70 py-16 sm:py-20 lg:py-24">
       <div className="dot-grid absolute inset-y-0 left-0 w-1/3 opacity-40 [mask-image:linear-gradient(to_right,black,transparent)]"/>
       <div className="absolute left-[-10rem] top-[-8rem] h-80 w-80 rounded-full bg-cyan-100/80 blur-3xl"/>
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="section-space"><div className="container-site grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center"><SectionTitle eyebrow="About Youpeak Tech" title="Building Better Digital Experiences" text="Youpeak Tech helps businesses turn ideas into practical digital solutions. We focus on creating modern, reliable and user-friendly websites, applications and software that support real business needs."/><div className="grid gap-4 sm:grid-cols-3">{[
+    <section className="section-space"><div className="container-site grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center"><SectionTitle eyebrow="About Youpeak Tech" title="Building Better Digital Experiences" text="Youpeak Tech helps businesses turn ideas into practical digital solutions. We focus on creating modern, reliable and user-friendly websites, applications and software that support real business needs. Based in Bangalore, we work with businesses across sectors."/><div className="grid gap-4 sm:grid-cols-3">{[
       [Search,'Understand','We understand your business requirements before starting the project.'],[PencilRuler,'Create','We design and develop solutions focused on simplicity, usability and quality.'],[HeartHandshake,'Support','We help maintain and improve digital solutions as your business grows.']
     ].map(([Icon,title,text],i)=><div key={title} data-aos="fade-up" data-aos-delay={i*90} className={`rounded-2xl border p-6 ${i===0?'border-blue-100 bg-brand-50/70':i===1?'border-violet-100 bg-violet-50/70':'border-emerald-100 bg-accent-50/70'}`}><span className={`grid h-10 w-10 place-items-center rounded-xl text-white ${i===0?'bg-brand-600':i===1?'bg-violet-600':'bg-accent-600'}`}><Icon size={20}/></span><h3 className="mt-5 font-extrabold">{title}</h3><p className="mt-2 text-sm leading-6 text-muted">{text}</p></div>)}</div><div className="lg:col-start-1" data-aos="fade-up"><Link to="/about" className="btn-secondary">About Us <ArrowRight size={16}/></Link></div></div></section>
 

@@ -41,7 +41,7 @@ export default function Contact() {
     { Icon: MapPin, label: 'Registered Address', value: companyDetails.address, href: null },
     { Icon: Clock3, label: 'Business Hours', value: companyDetails.hours, href: null }
   ]
-  return <><SEO title="Contact Us | Youpeak Tech" description="Contact YOUPEAK TECHNOLOGIES PRIVATE LIMITED to discuss a website, application, software product or other digital solution."/><PageHero eyebrow="Contact Us" title="Let's Talk About Your Project" text="Have a website, application, software or digital idea? Share your requirements with Youpeak Tech and let's discuss the right solution."/>
+  return <><SEO path="/contact"/><PageHero eyebrow="Contact Us" title="Let's Talk About Your Project" text="Have a website, application, software or digital idea? Share your requirements with Youpeak Tech and let's discuss the right solution."/>
     <section className="section-space"><div className="container-site grid gap-12 lg:grid-cols-[1.15fr_.85fr] lg:gap-16">
       <div data-aos="fade-right"><SectionTitle eyebrow="Send an enquiry" title="Tell Us What You Need" text="Fill in the form below and share a few details about your project."/>
         <form onSubmit={submit} noValidate className="mt-8 grid gap-5 sm:grid-cols-2">

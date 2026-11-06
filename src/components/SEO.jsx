@@ -1,10 +1,14 @@
 import { useEffect } from 'react'
+import { applyHead } from '../seo/applyHead'
 
-export default function SEO({ title, description }) {
+/**
+ * Declares which route's SEO entry (see src/seo/seo.js) a page uses.
+ * At build time the same data is baked into the static HTML <head>;
+ * this effect keeps the head correct when users navigate client-side.
+ */
+export default function SEO({ path }) {
   useEffect(() => {
-    document.title = title
-    const meta = document.querySelector('meta[name="description"]')
-    if (meta) meta.setAttribute('content', description)
-  }, [title, description])
+    applyHead(path)
+  }, [path])
   return null
 }

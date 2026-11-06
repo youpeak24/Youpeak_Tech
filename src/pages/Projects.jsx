@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ExternalLink, Sparkles, Layers, ArrowUpRight } from 'lucide-react'
 import SEO from '../components/SEO'
 import { PageHero, CTA } from '../components/UI'
-import { projectsData, statusColors, companyDetails } from '../data/siteData'
+import { projectsData, statusColors } from '../data/siteData'
 
 export default function Projects() {
   const [selectedYear, setSelectedYear] = useState('All')
@@ -19,10 +19,7 @@ export default function Projects() {
 
   return (
     <>
-      <SEO 
-        title={`Previous Projects & Portfolio | ${companyDetails.legalName}`} 
-        description="Explore our portfolio of previous projects across web applications, corporate websites, e-commerce stores, and software solutions built by Youpeak Tech."
-      />
+      <SEO path="/projects" />
 
       <PageHero 
         eyebrow="Our Previous Projects" 
@@ -88,9 +85,12 @@ export function ProjectCard({ project, delay = 0 }) {
         {!imgError ? (
           <img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} website screenshot - built by Youpeak Tech`}
+            width="1200"
+            height="675"
             onError={() => setImgError(true)}
             loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
           />
         ) : (

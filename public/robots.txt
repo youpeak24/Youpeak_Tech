@@ -1,0 +1,8 @@
+# https://youpeaktech.com/robots.txt
+# Everything public is crawlable. Search engines, social scrapers and AI/answer engines are all welcome.
+# To opt out of a specific crawler, add a block such as:  User-agent: GPTBot  /  Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://youpeaktech.com/sitemap.xml
