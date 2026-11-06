@@ -2,13 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/previous-projects", "destination": "/projects", "permanent": true },
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.youpeaktech.com" }],
-      "destination": "https://youpeaktech.com/$1",
-      "permanent": true
-    }
+    { "source": "/previous-projects", "destination": "/projects", "permanent": true }
   ],
   "headers": [
     {

@@ -11,7 +11,7 @@
 import { companyDetails, services, projectsData } from '../data/siteData'
 
 export const SITE = {
-  url: 'https://youpeaktech.com', // canonical origin: https, no www, no trailing slash
+  url: 'https://www.youpeaktech.com', // canonical origin = Vercel's primary domain (apex 308-redirects to www). https, no trailing slash
   name: 'Youpeak Tech',
   legalName: companyDetails.legalName,
   alternateName: 'YouPeak Technologies',
