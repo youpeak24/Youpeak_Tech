@@ -35,7 +35,30 @@ export const companyDetails = {
   cin: 'U63120KA2026PTC228028',
   pan: 'AACCY2908A',
   tan: 'BLRY04289F',
-  hours: 'Monday – Saturday: 9:00 AM – 6:00 PM IST'
+  hours: 'Monday – Saturday: 9:00 AM – 6:00 PM IST',
+  social: {
+    youtube: 'https://www.youtube.com/@YoupeakTech',
+    instagram: 'https://www.instagram.com/youpeaktech/',
+    facebook: 'https://www.facebook.com/profile.php?id=61595378317942'
+  }
 }
+
+export const socialLinks = [
+  {
+    name: 'Instagram',
+    label: 'Follow on Instagram',
+    url: 'https://www.instagram.com/youpeaktech/'
+  },
+  {
+    name: 'YouTube',
+    label: 'Subscribe on YouTube',
+    url: 'https://www.youtube.com/@YoupeakTech'
+  },
+  {
+    name: 'Facebook',
+    label: 'Connect on Facebook',
+    url: 'https://www.facebook.com/profile.php?id=61595378317942'
+  }
+]
 
 export { projectsData, statusColors } from './projectsData'
