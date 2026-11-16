@@ -36,7 +36,7 @@ export default function FloatingSocialButtons() {
   return (
     <aside
       aria-label="Social media quick links"
-      className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-3 print:hidden"
+      className="fixed bottom-[5.5rem] right-[1.375rem] sm:bottom-[6.25rem] sm:right-[1.875rem] z-40 flex flex-col items-end gap-3 print:hidden"
     >
       {socialLinks.map((item) => {
         const style = channelStyles[item.name] || {}

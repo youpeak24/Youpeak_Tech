@@ -1,0 +1,41 @@
+/** Everything site-specific about the chat widget. The knowledge the AI answers from lives in api/_chatKnowledge.js. */
+export const chatConfig = {
+  siteKey: 'youpeak',
+  apiPath: '/api/chat',
+  name: 'Youpeak Assistant',
+  subtitle: 'Online · Websites, apps & software',
+  avatar: '/icon-192.png',
+  greeting:
+    "Hi, I'm the **Youpeak Tech** assistant 👋\n\nAsk me about our websites, mobile apps, software and automation services, see our past projects, or find out how to start yours.",
+  teaser: 'Need a website or app? Ask me anything 👋',
+  placeholder: 'Ask about our services or projects…',
+  disclaimer: 'AI assistant · answers may be imperfect. For quotes, please contact our team.',
+  suggestions: [
+    'What services do you offer?',
+    'Show me your projects',
+    'I need a website for my business',
+    'How can I contact you?',
+  ],
+  actions: [
+    { label: '💬 WhatsApp', href: 'https://wa.me/919384957775' },
+    { label: '📞 Call', href: 'tel:+919384957775' },
+    { label: '✉️ Contact page', href: '/contact' },
+  ],
+  theme: {
+    '--cbx-accent': '#0f5f9b',
+    '--cbx-accent-2': '#2479b9',
+    '--cbx-on-accent': '#ffffff',
+    '--cbx-head-bg': 'linear-gradient(135deg, #0f4c81, #2479b9)',
+    '--cbx-chip': '#0f5f9b',
+    '--cbx-link': '#0f5f9b',
+    '--cbx-bg': '#ffffff',
+    '--cbx-surface': '#eef4fa',
+    '--cbx-text': '#102a43',
+    '--cbx-muted': '#5f7388',
+    '--cbx-border': 'rgba(16, 42, 67, 0.12)',
+    '--cbx-user-bg': 'linear-gradient(135deg, #0f4c81, #2479b9)',
+    '--cbx-font': "Inter, Manrope, ui-sans-serif, system-ui, sans-serif",
+    '--cbx-right': '1rem',
+    '--cbx-bottom': '1.25rem',
+  },
+}

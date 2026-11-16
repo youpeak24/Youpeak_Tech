@@ -1,9 +1,11 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import AOSController from './components/AOSController'
 import FloatingSocialButtons from './components/FloatingSocialButtons'
+import Chatbot from './components/chatbot/Chatbot'
+import { chatConfig } from './components/chatbot/chatConfig'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -14,6 +16,8 @@ import { PrivacyPolicy, Terms } from './pages/Legal'
 import NotFound from './pages/NotFound'
 
 export default function App() {
+  const { pathname } = useLocation()
+  const navigate = useNavigate()
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollToTop/>
@@ -35,6 +39,7 @@ export default function App() {
       </main>
       <Footer/>
       <FloatingSocialButtons/>
+      <Chatbot config={chatConfig} page={pathname} onNavigate={navigate}/>
     </div>
   )
 }
