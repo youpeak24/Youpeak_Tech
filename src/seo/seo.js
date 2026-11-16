@@ -90,7 +90,7 @@ export const PAGES = {
   '/contact': {
     title: 'Contact Youpeak Tech | Start Your Website or App Project',
     description:
-      'Contact Youpeak Tech in Bangalore to discuss your website, app or software project. Call +91 9087615708, email or send an enquiry. Mon-Sat, 9 AM-6 PM IST.',
+      'Contact Youpeak Tech in Bangalore to discuss your website, app or software project. Call +91 93849 57775, email or send an enquiry. Mon-Sat, 9 AM-6 PM IST.',
     breadcrumb: 'Contact',
     schemaType: 'ContactPage',
     changefreq: 'yearly',
@@ -157,7 +157,7 @@ function organizationNode() {
     },
     image: absUrl(SITE.ogImage),
     email: companyDetails.email,
-    telephone: '+919087615708',
+    telephone: '+919384957775',
     address: {
       '@type': 'PostalAddress',
       streetAddress: STREET,
@@ -178,7 +178,7 @@ function organizationNode() {
       {
         '@type': 'ContactPoint',
         contactType: 'customer support',
-        telephone: '+919087615708',
+        telephone: '+919384957775',
         email: companyDetails.email,
         areaServed: 'IN',
         availableLanguage: ['English'],
